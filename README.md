@@ -10,9 +10,9 @@
 
 ## About <a name="about"></a>
 
-Este projeto é um sistema básico de autenticação baseado em microserviços, desenvolvido como um monorepo utilizando [Lerna](https://lerna.js.org/). Ele usa TypeScript e Express para a estrutura dos microserviços, com a comunicação entre eles sendo feita por meio do Axios. O sistema inclui autenticação via JWT (JSON Web Tokens) e um sistema centralizado de logs que captura e armazena todos os logs gerados pelos microserviços.
+Este projeto é um sistema básico de autenticação construído em um ambiente de monorepo utilizando microserviços. Ele foi desenvolvido com Lerna, TypeScript e Express, utilizando Axios para a comunicação entre os microserviços. O sistema implementa autenticação com JWT (JSON Web Tokens) para garantir a segurança dos usuários e fornece um sistema centralizado de logs que registra todas as atividades no sistema, permitindo monitoramento e auditoria efetivos. Além disso, todos os microserviços possuem testes unitários e de integração para garantir a qualidade e a estabilidade do código.
 
-Cada microserviço tem testes unitários e de integração para garantir a qualidade do código e a correta integração dos serviços. O objetivo é criar uma estrutura escalável e modular para facilitar a manutenção e adição de novas funcionalidades no futuro.
+O banco de dados utilizado é o PostgreSQL, acessado através do Prisma, que facilita a manipulação de dados e a integração com o banco.
 
 ## Getting Started <a name="getting_started"></a>
 
@@ -43,6 +43,16 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 3. Configure as variáveis de ambiente em cada microserviço conforme necessário. Um exemplo de arquivo `.env` pode ser encontrado em cada serviço.
 
+  ```bash
+  DATABASE_URL=postgresql://usuario:senha@localhost:5432/nome_do_banco
+  JWT_SECRET=seu_segredo
+  ```
+
+4. Execute as migrações do Prisma:
+
+  ```bash
+  npx prisma migrate dev --name init
+  ```
 5. Inicie todos os microserviços:
 
    ```bash
