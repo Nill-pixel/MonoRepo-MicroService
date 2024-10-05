@@ -1,0 +1,29 @@
+{
+  "name": "@my-monorepo/logs",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Nilvany Sunguessungue <tiagonilvany@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/logs.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@my-monorepo/logs.test.js",
+    "dev": "ts-node-dev --respawn src/index.ts"
+  },
+  "dependencies": {
+    "@my-monorepo/logs": "file:",
+    "@types/express": "^5.0.0",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0"
+  }
+}
