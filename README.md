@@ -43,16 +43,16 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 3. Configure as variáveis de ambiente em cada microserviço conforme necessário. Um exemplo de arquivo `.env` pode ser encontrado em cada serviço.
 
-  ```bash
-  DATABASE_URL=postgresql://usuario:senha@localhost:5432/nome_do_banco
-  JWT_SECRET=seu_segredo
-  ```
+    ```bash
+    DATABASE_URL=postgresql://usuario:senha@localhost:5432/nome_do_banco
+    JWT_SECRET=seu_segredo
+    ```
 
 4. Execute as migrações do Prisma:
 
-  ```bash
-  npx prisma migrate dev --name init
-  ```
+    ```bash
+    npx prisma migrate dev --name init
+    ```
 5. Inicie todos os microserviços:
 
    ```bash
