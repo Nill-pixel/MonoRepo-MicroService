@@ -1,7 +1,3 @@
-Aqui está uma versão editada do seu README para refletir o projeto monorepo com microservices, usando Lerna, TypeScript, Express, JWT para autenticação, e um sistema de logs centralizado.
-
----
-
 # Project Name - Monorepo Authentication System with Microservices
 
 ## Table of Contents
@@ -92,7 +88,3 @@ Os microserviços possuem testes unitários e de integração. Para rodar os tes
    ```
 
 Os resultados dos testes serão exibidos no console e relatórios detalhados podem ser gerados para análise adicional.
-
----
-
-Este README foi ajustado para refletir a estrutura do seu projeto e fornecer instruções claras sobre como configurar, usar e testar o sistema. Se houver mais detalhes ou especificidades, você pode expandir ainda mais as seções de acordo com a necessidade do projeto.
