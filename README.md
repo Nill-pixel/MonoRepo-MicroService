@@ -27,7 +27,7 @@ As instruções a seguir irão te guiar para ter uma cópia do projeto em execu�
 Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 - [Node.js](https://nodejs.org/) (v16 ou superior)
-- [Yarn](https://yarnpkg.com/)
+- [Npm](https://npm.com/)
 - [Lerna](https://lerna.js.org/) (`yarn global add lerna`)
 
 ### Installing
@@ -35,7 +35,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
+   git clone https://github.com/Nill-pixel/MonoRepo-MicroService.git
    ```
 
 2. Instale as dependências do monorepo:
