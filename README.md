@@ -40,7 +40,6 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
    npm install
    ```
 
-
 3. Configure as variáveis de ambiente em cada microserviço conforme necessário. Um exemplo de arquivo `.env` pode ser encontrado em cada serviço.
 
     ```bash
