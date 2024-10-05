@@ -1,4 +1,4 @@
-# Project Name - Monorepo Authentication System with Microservices
+# Monorepo Authentication System with Microservices
 
 ## Table of Contents
 
