@@ -4,6 +4,10 @@
   "workspaces": [
     "services/*"
   ],
+  "nohoist": [
+    "**/@prisma/client",
+    "**/prisma"
+  ],
   "dependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.0",
@@ -17,7 +21,6 @@
     "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
-    "lerna": "^8.1.8",
-    "prisma": "^5.20.0"
+    "lerna": "^8.1.8"
   }
 }

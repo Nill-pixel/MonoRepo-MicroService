@@ -22,14 +22,10 @@
   },
   "dependencies": {
     "@my-monorepo/auth": "file:",
-    "@prisma/client": "^5.20.0",
     "@types/express": "^5.0.0",
     "@types/jsonwebtoken": "^9.0.7",
     "body-parser": "^1.20.3",
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2"
-  },
-  "devDependencies": {
-    "prisma": "^5.20.0"
   }
 }

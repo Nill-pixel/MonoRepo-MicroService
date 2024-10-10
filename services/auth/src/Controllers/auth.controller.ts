@@ -22,12 +22,15 @@ export class AuthController {
 
   async signIn(userData: sigInType) {
     const userFound = await this.userService.findOne(userData.email)
+    if (!userFound) {
+      return { message: "Usuário não encontrado" }
+    }
     const userVerified = await this.authService.verifyUser(userData, userFound)
     if (userVerified) {
       const jwtToken = this.authService.createJWT(userFound)
       return jwtToken
     } else {
-      return { message: "Usuário não verificado" }
+      return { message: "Password errada!" }
     }
   }
 }

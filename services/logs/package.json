@@ -22,8 +22,10 @@
   },
   "dependencies": {
     "@my-monorepo/logs": "file:",
+    "@prisma/client": "^5.20.0",
     "@types/express": "^5.0.0",
     "body-parser": "^1.20.3",
-    "express": "^4.21.0"
+    "express": "^4.21.0",
+    "prisma": "^5.20.0"
   }
 }
