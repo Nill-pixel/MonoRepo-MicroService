@@ -1,2 +1,3 @@
 /lib
 /__tests__
+/src/db/
