@@ -1,4 +1,4 @@
-import { Log } from "@prisma/client";
+import { Log } from "../models/log.model";
 import { LogService } from "../Services/log.service";
 import { log } from "../types/log.interface";
 
@@ -20,12 +20,12 @@ export class LogController {
   async getError(): Promise<Log[]> {
     return this.logService.getError()
   }
-  
+
   async getWarning(): Promise<Log[]> {
     return this.logService.getWarning()
   }
 
-  async countInfo(): Promise<Number>{
+  async countInfo(): Promise<Number> {
     return this.logService.countInfo()
   }
 

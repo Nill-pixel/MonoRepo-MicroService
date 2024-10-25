@@ -1,6 +1,7 @@
 import axios from "axios";
 import { sigInType, userData } from "../types/auth.interface";
 import jwt from "jsonwebtoken";
+import { LogLevel } from "../enum/log.level.enum";
 
 export class AuthService {
 
@@ -30,5 +31,20 @@ export class AuthService {
       expiresIn: 3600
     })
     return token
+  }
+
+  async sendLog(level: LogLevel, message: string, details: Record<string, any>) {
+    const log = {
+      level: level,
+      message: message,
+      details: details
+    }
+
+    try {
+      await axios.post('http://localhost:3003/log/save', log)
+      console.log('Log send successfuly')
+    } catch (err) {
+      console.error('Falha ao enviar log', err)
+    }
   }
 }

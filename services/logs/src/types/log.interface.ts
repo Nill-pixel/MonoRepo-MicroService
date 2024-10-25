@@ -1,15 +1,8 @@
-import { LogLevel } from "@prisma/client";
+import { LogLevel } from "../enum/log.level.enum";
 
 export interface log {
-  level: LogLevel
-  message: string
-  details: string
-}
-export interface LogsByDay {
-  [key: string]: number;
-}
-export interface LogStats {
-  totalLogs: number;
-  totalDays: number;
-  averageLogsPerDay: number;
+  level: LogLevel; // O nível é do tipo LogLevel
+  message?: string; // Mensagem opcional, pois pode ser nula
+  details: Record<string, any>; // Details deve ser um objeto, representando JSON
+  data?: Date; // Data opcional, se precisar incluir
 }
